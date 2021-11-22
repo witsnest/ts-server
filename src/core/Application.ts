@@ -19,7 +19,7 @@ export class Application {
 
     // Private methods
     private listenRoutes(req: IncomingMessage, res: ServerResponse) {
-
+        res.end('Hello world!');
     }
 
 }
