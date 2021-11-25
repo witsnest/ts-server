@@ -1,6 +1,5 @@
 import * as http from 'http';
-import { Controller, Get } from './core';
-import { Application } from './core/application';
+import { Application, Controller, Get } from './core';
 import { BaseController } from './core/common';
 
 

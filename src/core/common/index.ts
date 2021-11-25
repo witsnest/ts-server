@@ -1,2 +1,2 @@
-export * from './controller';
-export * from './middleware';
+export * from './BaseController';
+export * from './BaseMiddleware';
