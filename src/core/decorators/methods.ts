@@ -4,6 +4,9 @@ import { BaseController } from '../common';
 function methodFactory(path: string, type: string): MethodDecorator {
     return (target: BaseController, propertyKey: string | symbol, descriptor: PropertyDescriptor) => {
 
+        console.log('Method ', descriptor.value, target);
+
+
         // In case the controller decorator is executed first, 
         // we need to register the rotues first for the controller
         let routes = Reflect.getMetadata('routes', target.constructor);

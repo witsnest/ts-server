@@ -18,6 +18,7 @@ function controllerFactory<T extends BaseController>(target: T, params: IControl
 
 export function Controller(params: IControllerParams): ClassDecorator {
     return <T extends BaseController>(target: T) => {
+        console.log('Controller ', target);
         controllerFactory(target, params);
     }
 }

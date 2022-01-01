@@ -1,30 +1,14 @@
-import * as http from 'http';
-import { Application, Controller, Get } from './core';
-import { BaseController } from './core/common';
+import { Application, bootstrap } from './core';
+import { LoginController } from './demo/login';
 
 
-@Controller({
-    path: '/login',
-    middlewares: []
+@bootstrap({
+    routes: [
+        LoginController
+    ]
 })
-class LoginController extends BaseController {
-    constructor() {
-        super();
-    }
+class App {}
 
-    @Get('/')
-    async login() {}
-}
-
-@Controller({
-    path: '/user',
-    middlewares: []
-})
-class UserController extends BaseController {
-    constructor() {
-        super();
-    }
-}
 
 const app = new Application();
 app.start(3000);
