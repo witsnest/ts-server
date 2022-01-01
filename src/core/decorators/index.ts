@@ -1,4 +1,4 @@
 export * from './bootstrap';
-export * from './controller';
+export * from './Controller';
 export * from './methods';
 export * from './middleware';
