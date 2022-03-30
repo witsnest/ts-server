@@ -1,8 +1,8 @@
-import { Application, bootstrap } from './core';
+import { Application, Bootstrap } from './core';
 import { LoginController } from './demo/login';
 
 
-@bootstrap({
+@Bootstrap({
     routes: [
         LoginController
     ]

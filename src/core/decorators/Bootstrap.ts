@@ -1,4 +1,4 @@
-export function bootstrap(params: any) {
+export function Bootstrap(params: any) {
     return (target: any) => {
         // return target;
         console.log(target);

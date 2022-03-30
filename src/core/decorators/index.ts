@@ -1,4 +1,4 @@
-export * from './bootstrap';
+export * from './Bootstrap';
 export * from './Controller';
-export * from './methods';
-export * from './middleware';
+export * from './HttpMethods';
+export * from './Middleware';

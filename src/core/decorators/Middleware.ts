@@ -1,4 +1,4 @@
-export function middleware() {
+export function Middleware() {
     return (target: any) => {
 
     }
