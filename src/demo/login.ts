@@ -1,4 +1,4 @@
-import { BaseController, Controller, Get } from '../core';
+import { BaseController, Controller, Get } from '../../core';
 
 @Controller({
     path: '/login',

@@ -1,4 +1,4 @@
-import { BaseController, Controller } from '../core';
+import { BaseController, Controller } from '../../core';
 
 
 @Controller({

@@ -1,4 +1,4 @@
-import { Application, Bootstrap } from './core';
+import { Application, Bootstrap } from '../core';
 import { LoginController } from './demo/login';
 
 
