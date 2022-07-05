@@ -1,17 +1,14 @@
-import * as http from 'http';
-import { Application } from './core/Application';
-import { Controller } from './core/decorators/Controller';
+import { Application, Bootstrap } from '../core';
+import { LoginController } from './demo/login';
 
 
-@Controller({
-    path: '/login',
-    middlewares: []
+@Bootstrap({
+    routes: [
+        LoginController
+    ]
 })
-class LoginController {
-    constructor() {
+class App {}
 
-    }
-}
 
 const app = new Application();
 app.start(3000);

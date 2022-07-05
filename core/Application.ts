@@ -1,4 +1,4 @@
-import { createServer, IncomingMessage, RequestListener, Server, ServerResponse } from 'http';
+import { createServer, IncomingMessage, Server, ServerResponse } from 'http';
 
 export class Application {
 
@@ -20,6 +20,9 @@ export class Application {
     // Private methods
     private listenRoutes(req: IncomingMessage, res: ServerResponse) {
 
+        console.log(Reflect);
+
+        res.end('Hello world!');
     }
 
 }
